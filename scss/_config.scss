@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&display=swap');
+
+$Dark-Gray: hsl(0, 0%, 63%);
+$Black: hsl(0, 0%, 0%);
+$White: hsl(0, 0%, 100%);
+$Very-Dark-Gray: hsl(0, 0%, 27%);
+$Font-main: 'Spartan', sans-serif;
+
+@mixin media-s{
+    @media screen and (min-width: 600px){
+        @content;
+    }
+}
+
+@mixin media-md{
+    @media screen and (min-width: 768px){
+        @content;
+    }
+}
+@mixin media-lg{
+    @media screen and (min-width: 1024px){
+        @content;
+    }
+}
