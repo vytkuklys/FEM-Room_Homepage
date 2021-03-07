@@ -33,6 +33,12 @@ $Font-main: 'Spartan', sans-serif;
     }
 }
 
+@mixin media-xl{
+    @media screen and (min-width: 1640px){
+        @content;
+    }
+}
+
 @mixin media-height-s{
     @media screen and (max-width: 1024px) and (max-height: 744px){
         @content;

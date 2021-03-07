@@ -291,7 +291,7 @@ main {
   text-transform: uppercase;
   margin-bottom: 1rem;
   letter-spacing: .15rem;
-  font-size: clamp(1.1rem, 1.6vw, 1.25rem);
+  font-size: clamp(1.05rem, 1.25vw, 1.15rem);
 }
 
 .about--bg-bottom {
@@ -444,7 +444,7 @@ main {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding: 10% 15%;
+    padding: 15% 15% 5%;
   }
   .shop__body .info__p {
     margin: 2.25rem 0;
@@ -501,6 +501,12 @@ main {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
     grid-area: img-light;
+  }
+}
+
+@media screen and (min-width: 1640px) {
+  .shop__body .info {
+    padding: 10% 12.5%;
   }
 }
 

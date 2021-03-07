@@ -127,7 +127,7 @@ main {
         text-transform: uppercase;
         margin-bottom: 1rem;
         letter-spacing: .15rem;
-        font-size: clamp(1.1rem, 1.6vw, 1.25rem);
+        font-size: clamp(1.05rem, 1.25vw, 1.15rem);
     }
 
     &--bg-bottom {
@@ -287,7 +287,7 @@ main {
             position: relative;
             width: 100%;
             @include flexColumn;
-            padding: 10% 15%;
+            padding: 15% 15% 5%;
 
             &__p {
                 margin: 2.25rem 0;
@@ -331,6 +331,13 @@ main {
             grid-area: img-light;
         }
     }
+}
+@include media-xl{
+    .shop__body {
+        .info {
+            padding: 10% 12.5%;
+        }
+    }        
 }
 
 @include media-height-s {
