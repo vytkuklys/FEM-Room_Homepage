@@ -291,7 +291,7 @@ main {
   text-transform: uppercase;
   margin-bottom: 1rem;
   letter-spacing: .15rem;
-  font-size: clamp(1.05rem, 1.25vw, 1.15rem);
+  font-size: 1.05rem;
 }
 
 .about--bg-bottom {
@@ -444,7 +444,8 @@ main {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding: 15% 15% 5%;
+    height: calc(100vh / 1.5);
+    padding: 10% 15%;
   }
   .shop__body .info__p {
     margin: 2.25rem 0;
@@ -526,6 +527,9 @@ main {
     height: 504px;
   }
   .shop__body .shop__slider .shop__holder .shop__slide {
+    height: 504px;
+  }
+  .shop__body .info {
     height: 504px;
   }
   .shop__body .info__slide__btns {

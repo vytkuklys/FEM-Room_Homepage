@@ -127,7 +127,7 @@ main {
         text-transform: uppercase;
         margin-bottom: 1rem;
         letter-spacing: .15rem;
-        font-size: clamp(1.05rem, 1.25vw, 1.15rem);
+        font-size: 1.05rem;
     }
 
     &--bg-bottom {
@@ -287,7 +287,8 @@ main {
             position: relative;
             width: 100%;
             @include flexColumn;
-            padding: 15% 15% 5%;
+            height: calc(100vh / 1.5);
+            padding: 10% 15%;
 
             &__p {
                 margin: 2.25rem 0;
@@ -365,6 +366,7 @@ main {
         }
 
         .info {
+            height: 504px;
             &__slide__btns {
                 top: 504px;
             }
