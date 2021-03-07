@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./dist/images/favicon-32x32.png">
   <link rel="stylesheet" href="./dist/css/main.css">
   <title>Frontend Mentor | Room homepage</title>
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  <header>
+  <header class="open header">
     <nav class="nav">
-      <div><img src="./images/icon-close.svg" alt=""></div>
+      <div class="nav__div">
+        <button class="nav__div__btn nav__div__btn-close" onfocus="blur()" aria-label="close"></button>
+        <button class="nav__div__btn nav__div__btn-open" onfocus="blur()" aria-label="open"></button>
+      </div>
+      <div class="nav__logo"><img src="./dist/images/logo.svg" alt=""></div>
       <ul class="nav__ul">
         <li class="nav__ul__li">Home</li>
         <li class="nav__ul__li">Shop</li>
@@ -23,17 +23,42 @@
       </ul>
     </nav>
   </header>
+  <main>
+    <div class="shop__body">
+      <div class="shop__slider">
+        <div class="shop__holder">
+          <div class="shop__slide" id="slide-0"></div>
+          <div class="shop__slide" id="slide-1"></div>
+          <div class="shop__slide" id="slide-2"></div>
+        </div>
+      </div>
+      <article class="info">
+        <h1 class="info__h1">Discover innovative ways to decorate</h1>
+        <p class="info__p">We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.
+        </p>
+        <button class="info__btn"  onfocus="blur()">Shop now <img src="./dist/images/icon-arrow.svg" alt=""></button>
+        <div class="shop__btns">
+          <button class="shop__btn shop__btn--previous" onfocus="blur()" aria-label="previous"><img src="./dist/images/icon-angle-left.svg" alt=""></button>
+          <button class="shop__btn shop__btn--next" onfocus="blur()" aria-label="next"><img src="./dist/images/icon-angle-right.svg" alt=""></button>
+        </div>
+      </article>
+    </div>
+    <div class="about">
+      <div class="about--bg-img"></div>
+      <article class="about__article">
+        <h2 class="about__h2">About our furniture</h2>
+        <p class="info__p about__p">Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need, from traditional to contemporary styles or anything in between. Product specialists are available to help you create your dream space.</p>
+      </article>
+      <div class="about--bg-img about--bg-bottom">
+        <div class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+          Coded by <a href="https://www.vytkuklys.com" target="_blank">vytkuklys</a>.
+        </div>
+      </div>
+    </div>
+  </main>
 
-  Discover innovative ways to decorate
-
-  We provide unmatched quality, comfort, and style for property owners across the country. 
-  Our experts combine form and function in bringing your vision to life. Create a room in your 
-  own style with our collection and make your property a reflection of you and what you love.
-
-  Shop now
-
-  We are available all across the globe
-
+  <!-- We are available all across the globe
   With stores all over the world, it's easy for you to find furniture for your home or place of business. 
   Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
   store locator. Any questions? Don't hesitate to contact us today.
@@ -46,18 +71,7 @@
   to ensure that every product is made as perfect and as consistent as possible. With three decades of 
   experience in this industry, we understand what customers want for their home and office.
 
-  Shop now
-
-  About our furniture
-
-  Our multifunctional collection blends design and function to suit your individual taste.
-  Make each room unique, or pick a cohesive theme that best express your interests and what
-  inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-  or anything in between. Product specialists are available to help you create your dream space.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  Shop now -->
+  <script src="index.js"></script>
 </body>
 </html>
