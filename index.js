@@ -2,8 +2,8 @@
 const btnOpen = document.querySelector('.nav__div__btn-open');
 const btnClose = document.querySelector('.nav__div__btn-close');
 const carousel = document.querySelector(".shop__holder");
-const previousBtn = document.querySelector(".shop__btn--previous");
-const nextBtn = document.querySelector(".shop__btn--next");
+const previousBtn = document.querySelector(".info__slide--previous");
+const nextBtn = document.querySelector(".info__slide--next");
 let clickIndex = 0;
 
 // ----- FUNCTIONAL EXPRESSIONS
@@ -51,8 +51,18 @@ nextBtn.addEventListener("click", ()=> nextSlide());
 previousBtn.addEventListener("click", ()=> previousSlide());
 
 document.addEventListener('keydown', ()=>{
-    event.keyCode === 37 ? previousSlide() : ''; 
-    event.keyCode === 39 ? nextSlide() : ''; 
+    if(event.keyCode === 37){
+        previousSlide();
+        previousBtn.classList.add('js-info__slide');
+    } 
+    if(event.keyCode === 39) {
+        nextSlide();
+        nextBtn.classList.add('js-info__slide')
+    }  
+    document.addEventListener('keyup', ()=>{
+        previousBtn.classList.remove('js-info__slide');
+        nextBtn.classList.remove('js-info__slide')
+    });
 });
 
 btnOpen.addEventListener('click', ()=>{

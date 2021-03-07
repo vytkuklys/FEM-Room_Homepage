@@ -252,7 +252,7 @@ main {
   opacity: .5;
 }
 
-.info .shop__btns {
+.info__slide__btns {
   background-color: black;
   position: absolute;
   right: 0;
@@ -261,7 +261,7 @@ main {
           transform: translateY(-3.5rem);
 }
 
-.info .shop__btn {
+.info__slide__btn {
   height: 3.5rem;
   width: 3.5rem;
   background-color: black;
@@ -272,7 +272,11 @@ main {
   cursor: pointer;
 }
 
-.info .shop__btn:hover {
+.info__slide__btn:hover {
+  background-color: #454545;
+}
+
+.info .js-info__slide {
   background-color: #454545;
 }
 
@@ -335,7 +339,7 @@ main {
     height: -moz-fit-content;
     height: fit-content;
   }
-  .info .shop__btns {
+  .info__slide__btns {
     top: 60vh;
   }
   .about--bg-img {
@@ -367,7 +371,7 @@ main {
     margin: 0 auto;
     width: 80%;
   }
-  .shop__body .info .shop__btns {
+  .shop__body .info__slide__btns {
     top: 70vh;
   }
   .about {
@@ -445,14 +449,14 @@ main {
   .shop__body .info__p {
     margin: 2.25rem 0;
   }
-  .shop__body .info .shop__btns {
+  .shop__body .info__slide__btns {
     top: calc(100vh / 1.5);
     -webkit-transform: translateY(-4.5rem);
             transform: translateY(-4.5rem);
     right: initial;
     left: 0;
   }
-  .shop__body .info .shop__btn {
+  .shop__body .info__slide__btn {
     height: 4.5rem;
     width: 5.6275vw;
   }
@@ -518,7 +522,7 @@ main {
   .shop__body .shop__slider .shop__holder .shop__slide {
     height: 504px;
   }
-  .shop__body .info .shop__btns {
+  .shop__body .info__slide__btns {
     top: 504px;
   }
   .about--bg-img {
