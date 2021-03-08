@@ -59,6 +59,7 @@ main {
 .info {
     padding: 15% 5%;
     height: 50vh;
+    overflow-y: hidden;
 
     &__h1 {
         font-size: clamp(1.675rem, 2.5vw, 2.5rem);

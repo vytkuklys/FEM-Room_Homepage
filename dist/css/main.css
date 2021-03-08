@@ -218,6 +218,7 @@ main {
 .info {
   padding: 15% 5%;
   height: 50vh;
+  overflow-y: hidden;
 }
 
 .info__h1 {
